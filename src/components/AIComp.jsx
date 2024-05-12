@@ -13,6 +13,7 @@ const AIComp = () => {
   const [budget, setBudget] = useState("");
   const [month, setMonth] = useState("");
   const [numTravelers, setNumTravelers] = useState("");
+  const [numDays, setNumDays] = useState(""); 
   const [destination, setDestination] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -31,12 +32,15 @@ const AIComp = () => {
   const handleNumTravelersChange = (e) => {
     setNumTravelers(e.target.value);
   };
+  const handleNumDayChange = (e) => {
+    setNumDays(e.target.value);
+  };
 
   const generateDestination = async () => {
     try {
       setLoading(true);
 
-      if (!preferences || !budget || !month || !numTravelers) {
+      if (!preferences || !budget || !month || !numTravelers || !numDays) {
         toast.error("Please fill all the Input Fields");
         return;
       }
@@ -52,6 +56,7 @@ const AIComp = () => {
             preferences,
             budget,
             numTravelers,
+            numDays,
             month,
           }),
         }
@@ -119,6 +124,17 @@ const AIComp = () => {
                 type="text"
                 value={numTravelers}
                 onChange={handleNumTravelersChange}
+                className="url_input"
+              />
+            </label>
+          </div>
+          <div>
+            <label className="block text-gray-700 py-2">
+              Number of Days:
+              <Input
+                type="number"
+                value={numDays}
+                onChange={handleNumDayChange}
                 className="url_input"
               />
             </label>
