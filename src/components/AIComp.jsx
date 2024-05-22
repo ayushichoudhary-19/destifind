@@ -95,7 +95,7 @@ const AIComp = () => {
             <label className="block text-gray-700 py-2">
               Budget:
               <Input
-                type="text"
+                type="number"
                 value={budget}
                 onChange={handleBudgetChange}
                 className="url_input"
@@ -121,7 +121,7 @@ const AIComp = () => {
             <label className="block text-gray-700 py-2">
               Number of Travelers:
               <Input
-                type="text"
+                type="number"
                 value={numTravelers}
                 onChange={handleNumTravelersChange}
                 className="url_input"
