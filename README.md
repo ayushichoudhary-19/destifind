@@ -1,6 +1,6 @@
-# Destify Project
+# Destifind Project
 
-Welcome to Destify - Your Ultimate Destination Finder!
+Welcome to Destifind - Your Ultimate Destination Finder!
 
 ## Table of Contents
 
@@ -11,13 +11,13 @@ Welcome to Destify - Your Ultimate Destination Finder!
 
 ## Introduction
 
-Destify is a project designed to help you discover your next travel destination. This repository contains the source code for the web application. The project is built using [React](https://reactjs.org/) for the frontend and Google's GEMINI API for retreving data.
+Destifind is a project designed to help you discover your next travel destination. This repository contains the source code for the web application. The project is built using [React](https://reactjs.org/) for the frontend and Google's GEMINI API for retreving data.
 
 ## Getting Started
 
-To get started with Destify, follow these steps:
+To get started with Destifind, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/srexrg/Destify.git`
+1. Clone the repository: `git clone https://github.com/ayushichoudhary-19/destifind.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
@@ -37,4 +37,4 @@ If you'd like to contribute to Destify, follow these steps:
 5. Submit a pull request.
 
 
-Happy travelling with Destify!
+Happy travelling with Destifind!
